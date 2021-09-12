@@ -11,7 +11,7 @@ public class Main {
     public static String prefix = ".";
 
     public static void main(String[] args) throws Exception {
-        JDA jda = JDABuilder.createDefault("ODg2MjYyMzQxMTI0MTE2NTQw.YTzCIA.iCdT5hS8AikINr3EQ-t-fsG1NU4")
+        JDA jda = JDABuilder.createDefault(Secret.botToken)
                 .addEventListeners(new Commands())
                 .build();
 
